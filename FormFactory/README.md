@@ -33,7 +33,7 @@ component, including function handles.
 
 ## Sign In Page
 
-![Sign In Demo](https://github.com/ant35/better-tools/blob/master/FormFactory/images/sign-in-demo.png)
+![Sign In Demo](https://raw.githubusercontent.com/ant35/better-tools/master/FormFactory/images/sign-in-demo.png)
 
 ```javascript
 import React, {PureComponent} from 'react';
@@ -66,7 +66,7 @@ export class SignInDemo extends PureComponent {
 ```
 
 ## Create Account Page
-![Create Account Page Demo](https://github.com/ant35/better-tools/blob/master/FormFactory/images/create-account-page-demo.png)
+![Create Account Page Demo](https://raw.githubusercontent.com/ant35/better-tools/master/FormFactory/images/create-account-page-demo.png)
 
 ```javascript
 import React, {PureComponent} from 'react';
@@ -106,6 +106,7 @@ export class CreateAccountDemo extends PureComponent {
 }
 ```
 
+## Component Descriptions
 ```javascript
 Page.propTypes = {
 	size: PropTypes.number

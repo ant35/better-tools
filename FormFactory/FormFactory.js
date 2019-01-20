@@ -3,6 +3,7 @@ const create = React.createElement;
 const memo = React.memo;
 const Fragment = React.Fragment;
 const PropTypes = require('prop-types');
+const reactstrap = require('reactstrap');
 const { 
 	Button,
 	Form,
@@ -10,7 +11,7 @@ const {
 	Label,
 	Input,
 	FormText
-} = require('reactstrap');
+} = reactstrap;
 
 const Page = memo(function Page (props) {
 	return create('div', {className: 'form-group col-sm-' + props.size},
@@ -32,8 +33,8 @@ const Section = memo(function Section (props) {
 const InputField = memo(function InputField ({label, type, name, id, attribs}) {
 	return create(Fragment, null, 
 		[
-			create(Label, {for: id}, attribs.label), 
-			create(Input, Object.assign({type: type, name: name, id: id}, attribs), null)
+			create(Label, {key: 0, for: id}, attribs.label), 
+			create(Input, Object.assign({key: 1, type: type, name: name, id: id}, attribs), null)
 		]);
 });
 
@@ -168,3 +169,17 @@ const RadioButton = memo(function RadioButton(props) {
 const Checkbox = memo(function Checkbox(props) {
 	return create(InputField, {type: 'checkbox', name: 'checkbox', id: 'checkbox', attribs: props}, null);
 });
+
+exports.Page = Page;
+exports.Section = Section;
+exports.FirstName = FirstName;
+exports.MiddleName = MiddleName;
+exports.LastName = LastName;
+exports.Email = Email;
+exports.Username = Username;
+exports.Password = Password;
+exports.Text = Text;
+exports.Button = Button;
+exports.Checkbox = Checkbox;
+exports.Paragraph = Paragraph;
+exports.RadioButton = RadioButton;
