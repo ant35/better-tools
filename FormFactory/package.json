@@ -1,0 +1,21 @@
+{
+  "name": "better-form-factory",
+  "version": "1.0.1",
+  "description": "This is a wrapper class for reactstrap's Form that let's you easily create custom forms.",
+  "main": "FormFactory.js",
+  "keywords": [
+    "reactstrap",
+    "form",
+    "wrapper"
+  ],
+  "author": "Alexander Torres <alex.torr3s@gmail.com> (http://www.everythingquant.com)",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "reactstrap": "^7.1.0"
+  },
+  "devDependencies": {}
+}
