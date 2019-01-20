@@ -30,9 +30,11 @@ component, including function handles.
 // or more simply
 <Control />
 ```
-![Sign In Demo](images/sign-in-demo.png)
 
 ## Sign In Page
+
+![Sign In Demo](https://github.com/ant35/better-tools/blob/master/FormFactory/images/sign-in-demo.png)
+
 ```javascript
 import React, {PureComponent} from 'react';
 import {Button} from 'reactstrap';
@@ -62,9 +64,10 @@ export class SignInDemo extends PureComponent {
   }
 }
 ```
-![Create Account Page Demo](images/create-account-page-demo.png)
 
 ## Create Account Page
+![Create Account Page Demo](https://github.com/ant35/better-tools/blob/master/FormFactory/images/create-account-page-demo.png)
+
 ```javascript
 import React, {PureComponent} from 'react';
 import {Button} from 'reactstrap';
